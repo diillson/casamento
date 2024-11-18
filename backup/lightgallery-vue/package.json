@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "build:library": "npx vue-cli-service build --target lib --name LightGalleryVue ./src/components/LightGallery.vue && tsc --emitDeclarationOnly"
+    "build:library": "npx vue-cli-service build --target lib --name LightGalleryVue src/components/LightGallery.vue && tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
     "core-js": "^3.6.5",

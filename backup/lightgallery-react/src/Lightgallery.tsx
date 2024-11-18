@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 import { LightGallerySettings } from 'lightgallery/lg-settings';
-import LightGallery from 'lightgallery';
+import LightGallery from 'src/Lightgallery';
 import {
     AfterSlideDetail,
     InitDetail,

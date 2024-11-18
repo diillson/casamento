@@ -5,7 +5,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import lightGallery from 'lightgallery';
+import lightGallery from 'src/lightgallery';
 import { LightGallerySettings } from 'lightgallery/lg-settings';
 import { TemplateResult } from 'lit';
 import { LightGallery } from 'lightgallery/lightgallery';
