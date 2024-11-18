@@ -6,7 +6,7 @@
 ![types](https://badgen.net/npm/types/lightgallery?color=blue)
 ![hits](https://badgen.net/jsdelivr/hits/npm/lightgallery?color=pink)
 
-# lightGallery
+# lightGallery --AAOKOSKALLLLL
 
 A customizable, modular, responsive, lightbox gallery plugin. No dependencies.\\
 Available for React.js, Angular, Vue.js, and typescript.
