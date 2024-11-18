@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Galeria de Fotos</title>
+    <link rel="stylesheet" href="dist/css/lightgallery.css">
+    <script src="dist/lightgallery.es5.js"></script>
+    <script src="dist/plugins/thumbnail/lg-thumbnail.es5.js"></script>
+    <script src="dist/plugins/fullscreen/lg-fullscreen.es5.js"></script>
+</head>
+<body>
+<h1>Minha Galeria de Fotos</h1>
+<div id="lightgallery">
+    <a href="images/foto1.jpg">
+        <img src="images/foto1-thumb.jpg" />
+    </a>
+    <a href="images/foto2.jpg">
+        <img src="images/foto2-thumb.jpg" />
+    </a>
+    <!-- Adicione mais fotos aqui -->
+</div>
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        thumbnail: true,
+        fullscreen: true
+    });
+</script>
+</body>
+</html>
