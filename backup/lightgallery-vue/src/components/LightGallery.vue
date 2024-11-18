@@ -5,9 +5,9 @@
 <script lang="ts">
 import { PropType } from 'vue';
 import { Options, Vue } from 'vue-class-component';
-import lightGallery from '../../../src';
-import { LightGallery as LGPlugin } from '../../../src/lightgallery';
-import { LightGallerySettings } from '../../../src/lg-settings';
+import lightGallery from '../../../../src';
+import { LightGallery as LGPlugin } from '../../../../src/lightgallery';
+import { LightGallerySettings } from '../../../../src/lg-settings';
 import {
     AfterAppendSubHtmlDetail,
     AfterCloseDetail,
@@ -30,7 +30,7 @@ import {
     lGEvents,
     PosterClickDetail,
     SlideItemLoadDetail,
-} from '../../../src/lg-events';
+} from '../../../../src/lg-events';
 
 @Options({
     props: {

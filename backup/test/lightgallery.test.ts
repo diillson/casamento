@@ -6,14 +6,14 @@
 //window.MutationObserver = MutationObserver;
 import { waitFor } from '@testing-library/dom';
 import '@testing-library/jest-dom';
-import lightGallery from '../src';
-import Autoplay from '../src/plugins/autoplay/lg-autoplay';
-import Fullscreen from '../src/plugins/fullscreen/lg-fullscreen';
-import Pager from '../src/plugins/pager/lg-pager';
-import Rotate from '../src/plugins/rotate/lg-rotate';
-import Share from '../src/plugins/share/lg-share';
-import Thumbnails from '../src/plugins/thumbnail/lg-thumbnail';
-import Zoom from '../src/plugins/zoom/lg-zoom';
+import lightGallery from '../../src';
+import Autoplay from '../../src/plugins/autoplay/lg-autoplay';
+import Fullscreen from '../../src/plugins/fullscreen/lg-fullscreen';
+import Pager from '../../src/plugins/pager/lg-pager';
+import Rotate from '../../src/plugins/rotate/lg-rotate';
+import Share from '../../src/plugins/share/lg-share';
+import Thumbnails from '../../src/plugins/thumbnail/lg-thumbnail';
+import Zoom from '../../src/plugins/zoom/lg-zoom';
 
 describe('Initialize', () => {
     it('Should be able to initialize lightGallery', () => {

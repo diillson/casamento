@@ -50,8 +50,8 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import Lightgallery from './components/LightGallery.vue';
-import { LightGallery as LGPlugin } from '../../src/lightgallery';
-import lgZoom from '../../src/plugins/zoom/lg-zoom';
+import { LightGallery as LGPlugin } from '../../../src/lightgallery';
+import lgZoom from '../../../src/plugins/zoom/lg-zoom';
 
 @Options({
     components: {

@@ -1,7 +1,7 @@
 /**
  * Dummy test
  */
-import lightGallery from '../src';
+import lightGallery from '../../src';
 
 import '@testing-library/jest-dom';
 
@@ -12,9 +12,9 @@ import {
     getVimeoURLParams,
     getYouTubeParams,
     isYouTubeNoCookie,
-} from '../src/plugins/video/lg-video-utils';
-import utils from '../src/lg-utils';
-import { VideoInfo } from '../src/types';
+} from '../../src/plugins/video/lg-video-utils';
+import utils from '../../src/lg-utils';
+import { VideoInfo } from '../../src/types';
 
 describe('Vimeo Video', () => {
     it('should build vimeo url params', async () => {
