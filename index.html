@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        /* Estilos Globais */
         body {
             font-family: 'Open Sans', sans-serif;
             margin: 0;
@@ -14,6 +15,8 @@
             background-color: #f9f9f9;
             color: #333;
         }
+
+        /* Estilo do Título */
         h1 {
             font-family: 'Great Vibes', cursive;
             font-size: 3rem;
@@ -25,14 +28,18 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        /* Estilo da Galeria */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsivo */
             gap: 15px;
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
+
+        /* Estilo dos Itens da Galeria */
         .gallery-item {
             position: relative;
             overflow: hidden;
@@ -40,25 +47,51 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .gallery-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /* Mantém a proporção da imagem */
             display: block;
             transition: transform 0.3s ease;
         }
+
+        /* Efeito de Hover */
         .gallery-item:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
+
         .gallery-item:hover img {
             transform: scale(1.1);
         }
-        @media (max-width: 768px) {
+
+        /* Media Queries para Responsividade */
+        @media (max-width: 1200px) {
             .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Ajusta o tamanho das colunas */
             }
         }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem; /* Reduz o tamanho do título em telas menores */
+            }
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta o tamanho das colunas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem; /* Reduz ainda mais o tamanho do título em smartphones */
+            }
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Ajusta o tamanho das colunas */
+            }
+        }
+
+        /* Estilo do Rodapé */
         footer {
             text-align: center;
             padding: 20px;
@@ -75,18 +108,3803 @@
 <h1>Memórias do Nosso Casamento</h1>
 
 <div class="gallery" id="lightgallery">
-    <!-- Exemplo de item da galeria -->
-    <a href="images/foto1.jpg" class="gallery-item">
-        <img data-src="images/foto1.jpg" alt="Foto 1" class="lazyload">
+
+    <a href="images/Samara e Edílson 001.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 001.jpg" alt="Samara e Edílson 001.jpg" class="lazyload">
     </a>
-    <a href="images/foto2.jpg" class="gallery-item">
-        <img data-src="images/foto2.jpg" alt="Foto 2" class="lazyload">
+
+    <a href="images/Samara e Edílson 002.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 002.jpg" alt="Samara e Edílson 002.jpg" class="lazyload">
     </a>
-    <!-- Adicione mais fotos aqui -->
+
+    <a href="images/Samara e Edílson 003.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 003.jpg" alt="Samara e Edílson 003.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 004.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 004.jpg" alt="Samara e Edílson 004.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 005.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 005.jpg" alt="Samara e Edílson 005.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 006.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 006.jpg" alt="Samara e Edílson 006.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 007.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 007.jpg" alt="Samara e Edílson 007.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 008.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 008.jpg" alt="Samara e Edílson 008.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 009.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 009.jpg" alt="Samara e Edílson 009.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 010.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 010.jpg" alt="Samara e Edílson 010.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 011.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 011.jpg" alt="Samara e Edílson 011.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 012.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 012.jpg" alt="Samara e Edílson 012.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 013.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 013.jpg" alt="Samara e Edílson 013.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 014.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 014.jpg" alt="Samara e Edílson 014.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 015.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 015.jpg" alt="Samara e Edílson 015.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 016.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 016.jpg" alt="Samara e Edílson 016.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 017.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 017.jpg" alt="Samara e Edílson 017.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 018.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 018.jpg" alt="Samara e Edílson 018.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 019.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 019.jpg" alt="Samara e Edílson 019.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 020.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 020.jpg" alt="Samara e Edílson 020.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 021.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 021.jpg" alt="Samara e Edílson 021.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 022.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 022.jpg" alt="Samara e Edílson 022.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 023.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 023.jpg" alt="Samara e Edílson 023.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 024.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 024.jpg" alt="Samara e Edílson 024.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 025.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 025.jpg" alt="Samara e Edílson 025.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 026.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 026.jpg" alt="Samara e Edílson 026.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 027.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 027.jpg" alt="Samara e Edílson 027.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 028.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 028.jpg" alt="Samara e Edílson 028.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 029.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 029.jpg" alt="Samara e Edílson 029.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 030.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 030.jpg" alt="Samara e Edílson 030.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 031.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 031.jpg" alt="Samara e Edílson 031.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 032.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 032.jpg" alt="Samara e Edílson 032.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 033.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 033.jpg" alt="Samara e Edílson 033.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 034.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 034.jpg" alt="Samara e Edílson 034.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 035.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 035.jpg" alt="Samara e Edílson 035.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 036.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 036.jpg" alt="Samara e Edílson 036.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 037.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 037.jpg" alt="Samara e Edílson 037.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 038.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 038.jpg" alt="Samara e Edílson 038.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 039.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 039.jpg" alt="Samara e Edílson 039.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 040.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 040.jpg" alt="Samara e Edílson 040.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 041.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 041.jpg" alt="Samara e Edílson 041.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 042.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 042.jpg" alt="Samara e Edílson 042.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 043.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 043.jpg" alt="Samara e Edílson 043.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 044.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 044.jpg" alt="Samara e Edílson 044.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 045.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 045.jpg" alt="Samara e Edílson 045.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 046.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 046.jpg" alt="Samara e Edílson 046.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 047.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 047.jpg" alt="Samara e Edílson 047.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 048.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 048.jpg" alt="Samara e Edílson 048.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 049.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 049.jpg" alt="Samara e Edílson 049.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 050.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 050.jpg" alt="Samara e Edílson 050.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 051.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 051.jpg" alt="Samara e Edílson 051.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 052.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 052.jpg" alt="Samara e Edílson 052.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 053.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 053.jpg" alt="Samara e Edílson 053.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 054.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 054.jpg" alt="Samara e Edílson 054.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 055.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 055.jpg" alt="Samara e Edílson 055.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 056.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 056.jpg" alt="Samara e Edílson 056.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 057.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 057.jpg" alt="Samara e Edílson 057.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 058.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 058.jpg" alt="Samara e Edílson 058.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 059.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 059.jpg" alt="Samara e Edílson 059.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 060.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 060.jpg" alt="Samara e Edílson 060.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 061.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 061.jpg" alt="Samara e Edílson 061.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 062.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 062.jpg" alt="Samara e Edílson 062.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 063.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 063.jpg" alt="Samara e Edílson 063.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 064.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 064.jpg" alt="Samara e Edílson 064.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 065.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 065.jpg" alt="Samara e Edílson 065.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 066.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 066.jpg" alt="Samara e Edílson 066.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 067.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 067.jpg" alt="Samara e Edílson 067.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 068.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 068.jpg" alt="Samara e Edílson 068.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 069.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 069.jpg" alt="Samara e Edílson 069.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 070.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 070.jpg" alt="Samara e Edílson 070.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 071.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 071.jpg" alt="Samara e Edílson 071.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 072.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 072.jpg" alt="Samara e Edílson 072.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 073.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 073.jpg" alt="Samara e Edílson 073.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 074.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 074.jpg" alt="Samara e Edílson 074.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 075.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 075.jpg" alt="Samara e Edílson 075.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 076.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 076.jpg" alt="Samara e Edílson 076.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 077.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 077.jpg" alt="Samara e Edílson 077.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 078.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 078.jpg" alt="Samara e Edílson 078.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 079.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 079.jpg" alt="Samara e Edílson 079.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 080.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 080.jpg" alt="Samara e Edílson 080.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 081.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 081.jpg" alt="Samara e Edílson 081.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 082.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 082.jpg" alt="Samara e Edílson 082.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 083.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 083.jpg" alt="Samara e Edílson 083.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 084.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 084.jpg" alt="Samara e Edílson 084.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 085.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 085.jpg" alt="Samara e Edílson 085.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 086.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 086.jpg" alt="Samara e Edílson 086.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 087.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 087.jpg" alt="Samara e Edílson 087.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 088.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 088.jpg" alt="Samara e Edílson 088.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 089.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 089.jpg" alt="Samara e Edílson 089.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 090.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 090.jpg" alt="Samara e Edílson 090.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 091.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 091.jpg" alt="Samara e Edílson 091.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 092.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 092.jpg" alt="Samara e Edílson 092.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 093.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 093.jpg" alt="Samara e Edílson 093.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 094.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 094.jpg" alt="Samara e Edílson 094.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 095.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 095.jpg" alt="Samara e Edílson 095.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 096.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 096.jpg" alt="Samara e Edílson 096.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 097.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 097.jpg" alt="Samara e Edílson 097.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 098.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 098.jpg" alt="Samara e Edílson 098.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 099.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 099.jpg" alt="Samara e Edílson 099.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 100.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 100.jpg" alt="Samara e Edílson 100.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 101.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 101.jpg" alt="Samara e Edílson 101.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 102.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 102.jpg" alt="Samara e Edílson 102.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 103.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 103.jpg" alt="Samara e Edílson 103.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 104.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 104.jpg" alt="Samara e Edílson 104.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 105.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 105.jpg" alt="Samara e Edílson 105.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 106.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 106.jpg" alt="Samara e Edílson 106.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 107.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 107.jpg" alt="Samara e Edílson 107.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 108.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 108.jpg" alt="Samara e Edílson 108.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 109.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 109.jpg" alt="Samara e Edílson 109.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 110.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 110.jpg" alt="Samara e Edílson 110.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 111.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 111.jpg" alt="Samara e Edílson 111.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 112.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 112.jpg" alt="Samara e Edílson 112.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 113.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 113.jpg" alt="Samara e Edílson 113.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 114.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 114.jpg" alt="Samara e Edílson 114.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 115.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 115.jpg" alt="Samara e Edílson 115.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 116.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 116.jpg" alt="Samara e Edílson 116.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 117.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 117.jpg" alt="Samara e Edílson 117.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 118.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 118.jpg" alt="Samara e Edílson 118.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 119.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 119.jpg" alt="Samara e Edílson 119.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 120.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 120.jpg" alt="Samara e Edílson 120.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 121.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 121.jpg" alt="Samara e Edílson 121.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 122.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 122.jpg" alt="Samara e Edílson 122.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 123.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 123.jpg" alt="Samara e Edílson 123.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 124.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 124.jpg" alt="Samara e Edílson 124.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 125.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 125.jpg" alt="Samara e Edílson 125.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 126.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 126.jpg" alt="Samara e Edílson 126.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 127.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 127.jpg" alt="Samara e Edílson 127.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 128.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 128.jpg" alt="Samara e Edílson 128.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 129.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 129.jpg" alt="Samara e Edílson 129.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 130.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 130.jpg" alt="Samara e Edílson 130.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 131.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 131.jpg" alt="Samara e Edílson 131.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 132.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 132.jpg" alt="Samara e Edílson 132.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 133.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 133.jpg" alt="Samara e Edílson 133.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 134.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 134.jpg" alt="Samara e Edílson 134.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 135.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 135.jpg" alt="Samara e Edílson 135.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 136.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 136.jpg" alt="Samara e Edílson 136.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 137.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 137.jpg" alt="Samara e Edílson 137.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 138.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 138.jpg" alt="Samara e Edílson 138.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 139.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 139.jpg" alt="Samara e Edílson 139.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 140.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 140.jpg" alt="Samara e Edílson 140.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 141.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 141.jpg" alt="Samara e Edílson 141.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 142.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 142.jpg" alt="Samara e Edílson 142.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 143.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 143.jpg" alt="Samara e Edílson 143.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 144.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 144.jpg" alt="Samara e Edílson 144.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 145.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 145.jpg" alt="Samara e Edílson 145.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 146.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 146.jpg" alt="Samara e Edílson 146.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 147.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 147.jpg" alt="Samara e Edílson 147.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 148.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 148.jpg" alt="Samara e Edílson 148.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 149.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 149.jpg" alt="Samara e Edílson 149.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 150.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 150.jpg" alt="Samara e Edílson 150.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 151.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 151.jpg" alt="Samara e Edílson 151.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 152.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 152.jpg" alt="Samara e Edílson 152.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 153.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 153.jpg" alt="Samara e Edílson 153.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 154.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 154.jpg" alt="Samara e Edílson 154.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 155.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 155.jpg" alt="Samara e Edílson 155.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 156.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 156.jpg" alt="Samara e Edílson 156.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 157.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 157.jpg" alt="Samara e Edílson 157.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 158.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 158.jpg" alt="Samara e Edílson 158.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 159.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 159.jpg" alt="Samara e Edílson 159.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 160.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 160.jpg" alt="Samara e Edílson 160.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 161.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 161.jpg" alt="Samara e Edílson 161.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 162.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 162.jpg" alt="Samara e Edílson 162.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 163.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 163.jpg" alt="Samara e Edílson 163.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 164.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 164.jpg" alt="Samara e Edílson 164.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 165.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 165.jpg" alt="Samara e Edílson 165.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 166.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 166.jpg" alt="Samara e Edílson 166.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 167.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 167.jpg" alt="Samara e Edílson 167.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 168.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 168.jpg" alt="Samara e Edílson 168.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 169.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 169.jpg" alt="Samara e Edílson 169.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 170.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 170.jpg" alt="Samara e Edílson 170.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 171.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 171.jpg" alt="Samara e Edílson 171.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 172.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 172.jpg" alt="Samara e Edílson 172.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 173.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 173.jpg" alt="Samara e Edílson 173.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 174.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 174.jpg" alt="Samara e Edílson 174.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 175.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 175.jpg" alt="Samara e Edílson 175.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 176.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 176.jpg" alt="Samara e Edílson 176.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 177.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 177.jpg" alt="Samara e Edílson 177.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 178.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 178.jpg" alt="Samara e Edílson 178.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 179.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 179.jpg" alt="Samara e Edílson 179.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 180.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 180.jpg" alt="Samara e Edílson 180.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 181.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 181.jpg" alt="Samara e Edílson 181.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 182.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 182.jpg" alt="Samara e Edílson 182.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 183.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 183.jpg" alt="Samara e Edílson 183.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 184.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 184.jpg" alt="Samara e Edílson 184.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 185.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 185.jpg" alt="Samara e Edílson 185.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 186.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 186.jpg" alt="Samara e Edílson 186.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 187.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 187.jpg" alt="Samara e Edílson 187.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 188.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 188.jpg" alt="Samara e Edílson 188.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 189.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 189.jpg" alt="Samara e Edílson 189.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 190.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 190.jpg" alt="Samara e Edílson 190.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 191.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 191.jpg" alt="Samara e Edílson 191.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 192.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 192.jpg" alt="Samara e Edílson 192.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 193.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 193.jpg" alt="Samara e Edílson 193.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 194.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 194.jpg" alt="Samara e Edílson 194.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 195.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 195.jpg" alt="Samara e Edílson 195.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 196.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 196.jpg" alt="Samara e Edílson 196.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 197.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 197.jpg" alt="Samara e Edílson 197.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 198.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 198.jpg" alt="Samara e Edílson 198.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 199.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 199.jpg" alt="Samara e Edílson 199.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 200.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 200.jpg" alt="Samara e Edílson 200.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 201.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 201.jpg" alt="Samara e Edílson 201.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 202.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 202.jpg" alt="Samara e Edílson 202.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 203.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 203.jpg" alt="Samara e Edílson 203.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 204.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 204.jpg" alt="Samara e Edílson 204.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 205.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 205.jpg" alt="Samara e Edílson 205.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 206.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 206.jpg" alt="Samara e Edílson 206.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 207.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 207.jpg" alt="Samara e Edílson 207.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 208.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 208.jpg" alt="Samara e Edílson 208.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 209.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 209.jpg" alt="Samara e Edílson 209.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 210.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 210.jpg" alt="Samara e Edílson 210.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 211.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 211.jpg" alt="Samara e Edílson 211.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 212.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 212.jpg" alt="Samara e Edílson 212.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 213.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 213.jpg" alt="Samara e Edílson 213.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 214.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 214.jpg" alt="Samara e Edílson 214.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 215.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 215.jpg" alt="Samara e Edílson 215.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 216.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 216.jpg" alt="Samara e Edílson 216.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 217.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 217.jpg" alt="Samara e Edílson 217.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 218.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 218.jpg" alt="Samara e Edílson 218.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 219.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 219.jpg" alt="Samara e Edílson 219.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 220.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 220.jpg" alt="Samara e Edílson 220.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 221.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 221.jpg" alt="Samara e Edílson 221.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 222.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 222.jpg" alt="Samara e Edílson 222.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 223.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 223.jpg" alt="Samara e Edílson 223.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 224.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 224.jpg" alt="Samara e Edílson 224.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 225.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 225.jpg" alt="Samara e Edílson 225.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 226.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 226.jpg" alt="Samara e Edílson 226.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 227.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 227.jpg" alt="Samara e Edílson 227.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 228.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 228.jpg" alt="Samara e Edílson 228.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 229.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 229.jpg" alt="Samara e Edílson 229.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 230.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 230.jpg" alt="Samara e Edílson 230.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 231.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 231.jpg" alt="Samara e Edílson 231.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 232.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 232.jpg" alt="Samara e Edílson 232.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 233.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 233.jpg" alt="Samara e Edílson 233.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 234.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 234.jpg" alt="Samara e Edílson 234.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 235.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 235.jpg" alt="Samara e Edílson 235.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 236.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 236.jpg" alt="Samara e Edílson 236.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 237.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 237.jpg" alt="Samara e Edílson 237.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 238.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 238.jpg" alt="Samara e Edílson 238.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 239.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 239.jpg" alt="Samara e Edílson 239.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 240.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 240.jpg" alt="Samara e Edílson 240.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 241.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 241.jpg" alt="Samara e Edílson 241.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 242.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 242.jpg" alt="Samara e Edílson 242.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 243.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 243.jpg" alt="Samara e Edílson 243.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 244.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 244.jpg" alt="Samara e Edílson 244.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 245.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 245.jpg" alt="Samara e Edílson 245.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 246.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 246.jpg" alt="Samara e Edílson 246.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 247.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 247.jpg" alt="Samara e Edílson 247.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 248.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 248.jpg" alt="Samara e Edílson 248.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 249.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 249.jpg" alt="Samara e Edílson 249.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 250.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 250.jpg" alt="Samara e Edílson 250.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 251.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 251.jpg" alt="Samara e Edílson 251.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 252.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 252.jpg" alt="Samara e Edílson 252.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 253.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 253.jpg" alt="Samara e Edílson 253.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 254.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 254.jpg" alt="Samara e Edílson 254.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 255.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 255.jpg" alt="Samara e Edílson 255.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 256.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 256.jpg" alt="Samara e Edílson 256.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 257.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 257.jpg" alt="Samara e Edílson 257.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 258.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 258.jpg" alt="Samara e Edílson 258.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 259.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 259.jpg" alt="Samara e Edílson 259.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 260.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 260.jpg" alt="Samara e Edílson 260.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 261.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 261.jpg" alt="Samara e Edílson 261.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 262.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 262.jpg" alt="Samara e Edílson 262.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 263.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 263.jpg" alt="Samara e Edílson 263.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 264.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 264.jpg" alt="Samara e Edílson 264.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 265.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 265.jpg" alt="Samara e Edílson 265.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 266.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 266.jpg" alt="Samara e Edílson 266.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 267.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 267.jpg" alt="Samara e Edílson 267.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 268.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 268.jpg" alt="Samara e Edílson 268.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 269.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 269.jpg" alt="Samara e Edílson 269.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 270.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 270.jpg" alt="Samara e Edílson 270.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 271.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 271.jpg" alt="Samara e Edílson 271.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 272.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 272.jpg" alt="Samara e Edílson 272.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 273.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 273.jpg" alt="Samara e Edílson 273.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 274.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 274.jpg" alt="Samara e Edílson 274.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 275.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 275.jpg" alt="Samara e Edílson 275.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 276.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 276.jpg" alt="Samara e Edílson 276.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 277.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 277.jpg" alt="Samara e Edílson 277.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 278.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 278.jpg" alt="Samara e Edílson 278.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 279.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 279.jpg" alt="Samara e Edílson 279.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 280.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 280.jpg" alt="Samara e Edílson 280.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 281.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 281.jpg" alt="Samara e Edílson 281.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 282.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 282.jpg" alt="Samara e Edílson 282.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 283.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 283.jpg" alt="Samara e Edílson 283.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 284.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 284.jpg" alt="Samara e Edílson 284.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 285.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 285.jpg" alt="Samara e Edílson 285.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 286.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 286.jpg" alt="Samara e Edílson 286.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 287.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 287.jpg" alt="Samara e Edílson 287.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 288.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 288.jpg" alt="Samara e Edílson 288.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 289.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 289.jpg" alt="Samara e Edílson 289.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 290.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 290.jpg" alt="Samara e Edílson 290.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 291.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 291.jpg" alt="Samara e Edílson 291.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 292.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 292.jpg" alt="Samara e Edílson 292.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 293.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 293.jpg" alt="Samara e Edílson 293.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 294.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 294.jpg" alt="Samara e Edílson 294.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 295.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 295.jpg" alt="Samara e Edílson 295.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 296.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 296.jpg" alt="Samara e Edílson 296.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 297.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 297.jpg" alt="Samara e Edílson 297.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 298.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 298.jpg" alt="Samara e Edílson 298.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 299.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 299.jpg" alt="Samara e Edílson 299.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 300.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 300.jpg" alt="Samara e Edílson 300.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 301.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 301.jpg" alt="Samara e Edílson 301.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 302.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 302.jpg" alt="Samara e Edílson 302.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 303.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 303.jpg" alt="Samara e Edílson 303.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 304.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 304.jpg" alt="Samara e Edílson 304.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 305.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 305.jpg" alt="Samara e Edílson 305.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 306.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 306.jpg" alt="Samara e Edílson 306.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 307.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 307.jpg" alt="Samara e Edílson 307.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 308.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 308.jpg" alt="Samara e Edílson 308.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 309.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 309.jpg" alt="Samara e Edílson 309.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 310.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 310.jpg" alt="Samara e Edílson 310.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 311.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 311.jpg" alt="Samara e Edílson 311.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 312.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 312.jpg" alt="Samara e Edílson 312.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 313.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 313.jpg" alt="Samara e Edílson 313.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 314.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 314.jpg" alt="Samara e Edílson 314.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 315.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 315.jpg" alt="Samara e Edílson 315.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 316.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 316.jpg" alt="Samara e Edílson 316.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 317.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 317.jpg" alt="Samara e Edílson 317.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 318.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 318.jpg" alt="Samara e Edílson 318.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 319.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 319.jpg" alt="Samara e Edílson 319.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 320.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 320.jpg" alt="Samara e Edílson 320.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 321.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 321.jpg" alt="Samara e Edílson 321.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 322.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 322.jpg" alt="Samara e Edílson 322.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 323.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 323.jpg" alt="Samara e Edílson 323.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 324.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 324.jpg" alt="Samara e Edílson 324.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 325.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 325.jpg" alt="Samara e Edílson 325.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 326.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 326.jpg" alt="Samara e Edílson 326.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 327.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 327.jpg" alt="Samara e Edílson 327.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 328.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 328.jpg" alt="Samara e Edílson 328.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 329.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 329.jpg" alt="Samara e Edílson 329.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 330.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 330.jpg" alt="Samara e Edílson 330.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 331.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 331.jpg" alt="Samara e Edílson 331.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 332.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 332.jpg" alt="Samara e Edílson 332.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 333.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 333.jpg" alt="Samara e Edílson 333.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 334.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 334.jpg" alt="Samara e Edílson 334.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 335.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 335.jpg" alt="Samara e Edílson 335.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 336.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 336.jpg" alt="Samara e Edílson 336.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 337.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 337.jpg" alt="Samara e Edílson 337.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 338.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 338.jpg" alt="Samara e Edílson 338.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 339.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 339.jpg" alt="Samara e Edílson 339.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 340.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 340.jpg" alt="Samara e Edílson 340.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 341.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 341.jpg" alt="Samara e Edílson 341.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 342.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 342.jpg" alt="Samara e Edílson 342.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 343.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 343.jpg" alt="Samara e Edílson 343.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 344.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 344.jpg" alt="Samara e Edílson 344.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 345.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 345.jpg" alt="Samara e Edílson 345.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 346.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 346.jpg" alt="Samara e Edílson 346.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 347.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 347.jpg" alt="Samara e Edílson 347.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 348.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 348.jpg" alt="Samara e Edílson 348.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 349.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 349.jpg" alt="Samara e Edílson 349.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 350.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 350.jpg" alt="Samara e Edílson 350.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 351.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 351.jpg" alt="Samara e Edílson 351.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 352.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 352.jpg" alt="Samara e Edílson 352.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 353.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 353.jpg" alt="Samara e Edílson 353.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 354.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 354.jpg" alt="Samara e Edílson 354.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 355.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 355.jpg" alt="Samara e Edílson 355.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 356.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 356.jpg" alt="Samara e Edílson 356.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 357.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 357.jpg" alt="Samara e Edílson 357.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 358.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 358.jpg" alt="Samara e Edílson 358.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 359.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 359.jpg" alt="Samara e Edílson 359.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 360.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 360.jpg" alt="Samara e Edílson 360.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 361.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 361.jpg" alt="Samara e Edílson 361.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 362.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 362.jpg" alt="Samara e Edílson 362.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 363.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 363.jpg" alt="Samara e Edílson 363.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 364.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 364.jpg" alt="Samara e Edílson 364.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 365.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 365.jpg" alt="Samara e Edílson 365.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 366.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 366.jpg" alt="Samara e Edílson 366.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 367.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 367.jpg" alt="Samara e Edílson 367.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 368.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 368.jpg" alt="Samara e Edílson 368.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 369.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 369.jpg" alt="Samara e Edílson 369.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 370.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 370.jpg" alt="Samara e Edílson 370.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 371.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 371.jpg" alt="Samara e Edílson 371.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 372.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 372.jpg" alt="Samara e Edílson 372.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 373.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 373.jpg" alt="Samara e Edílson 373.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 374.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 374.jpg" alt="Samara e Edílson 374.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 375.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 375.jpg" alt="Samara e Edílson 375.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 376.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 376.jpg" alt="Samara e Edílson 376.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 377.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 377.jpg" alt="Samara e Edílson 377.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 378.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 378.jpg" alt="Samara e Edílson 378.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 379.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 379.jpg" alt="Samara e Edílson 379.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 380.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 380.jpg" alt="Samara e Edílson 380.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 381.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 381.jpg" alt="Samara e Edílson 381.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 382.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 382.jpg" alt="Samara e Edílson 382.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 383.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 383.jpg" alt="Samara e Edílson 383.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 384.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 384.jpg" alt="Samara e Edílson 384.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 385.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 385.jpg" alt="Samara e Edílson 385.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 386.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 386.jpg" alt="Samara e Edílson 386.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 387.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 387.jpg" alt="Samara e Edílson 387.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 388.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 388.jpg" alt="Samara e Edílson 388.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 389.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 389.jpg" alt="Samara e Edílson 389.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 390.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 390.jpg" alt="Samara e Edílson 390.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 391.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 391.jpg" alt="Samara e Edílson 391.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 392.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 392.jpg" alt="Samara e Edílson 392.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 393.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 393.jpg" alt="Samara e Edílson 393.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 394.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 394.jpg" alt="Samara e Edílson 394.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 395.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 395.jpg" alt="Samara e Edílson 395.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 396.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 396.jpg" alt="Samara e Edílson 396.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 397.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 397.jpg" alt="Samara e Edílson 397.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 398.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 398.jpg" alt="Samara e Edílson 398.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 399.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 399.jpg" alt="Samara e Edílson 399.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 400.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 400.jpg" alt="Samara e Edílson 400.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 401.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 401.jpg" alt="Samara e Edílson 401.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 402.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 402.jpg" alt="Samara e Edílson 402.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 403.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 403.jpg" alt="Samara e Edílson 403.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 404.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 404.jpg" alt="Samara e Edílson 404.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 405.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 405.jpg" alt="Samara e Edílson 405.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 406.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 406.jpg" alt="Samara e Edílson 406.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 407.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 407.jpg" alt="Samara e Edílson 407.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 408.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 408.jpg" alt="Samara e Edílson 408.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 409.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 409.jpg" alt="Samara e Edílson 409.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 410.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 410.jpg" alt="Samara e Edílson 410.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 411.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 411.jpg" alt="Samara e Edílson 411.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 412.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 412.jpg" alt="Samara e Edílson 412.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 413.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 413.jpg" alt="Samara e Edílson 413.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 414.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 414.jpg" alt="Samara e Edílson 414.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 415.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 415.jpg" alt="Samara e Edílson 415.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 416.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 416.jpg" alt="Samara e Edílson 416.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 417.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 417.jpg" alt="Samara e Edílson 417.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 418.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 418.jpg" alt="Samara e Edílson 418.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 419.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 419.jpg" alt="Samara e Edílson 419.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 420.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 420.jpg" alt="Samara e Edílson 420.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 421.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 421.jpg" alt="Samara e Edílson 421.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 422.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 422.jpg" alt="Samara e Edílson 422.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 423.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 423.jpg" alt="Samara e Edílson 423.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 424.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 424.jpg" alt="Samara e Edílson 424.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 425.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 425.jpg" alt="Samara e Edílson 425.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 426.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 426.jpg" alt="Samara e Edílson 426.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 427.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 427.jpg" alt="Samara e Edílson 427.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 428.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 428.jpg" alt="Samara e Edílson 428.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 429.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 429.jpg" alt="Samara e Edílson 429.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 430.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 430.jpg" alt="Samara e Edílson 430.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 431.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 431.jpg" alt="Samara e Edílson 431.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 432.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 432.jpg" alt="Samara e Edílson 432.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 433.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 433.jpg" alt="Samara e Edílson 433.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 434.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 434.jpg" alt="Samara e Edílson 434.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 435.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 435.jpg" alt="Samara e Edílson 435.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 436.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 436.jpg" alt="Samara e Edílson 436.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 437.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 437.jpg" alt="Samara e Edílson 437.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 438.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 438.jpg" alt="Samara e Edílson 438.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 439.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 439.jpg" alt="Samara e Edílson 439.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 440.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 440.jpg" alt="Samara e Edílson 440.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 441.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 441.jpg" alt="Samara e Edílson 441.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 442.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 442.jpg" alt="Samara e Edílson 442.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 443.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 443.jpg" alt="Samara e Edílson 443.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 444.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 444.jpg" alt="Samara e Edílson 444.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 445.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 445.jpg" alt="Samara e Edílson 445.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 446.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 446.jpg" alt="Samara e Edílson 446.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 447.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 447.jpg" alt="Samara e Edílson 447.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 448.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 448.jpg" alt="Samara e Edílson 448.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 449.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 449.jpg" alt="Samara e Edílson 449.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 450.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 450.jpg" alt="Samara e Edílson 450.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 451.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 451.jpg" alt="Samara e Edílson 451.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 452.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 452.jpg" alt="Samara e Edílson 452.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 453.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 453.jpg" alt="Samara e Edílson 453.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 454.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 454.jpg" alt="Samara e Edílson 454.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 455.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 455.jpg" alt="Samara e Edílson 455.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 456.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 456.jpg" alt="Samara e Edílson 456.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 457.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 457.jpg" alt="Samara e Edílson 457.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 458.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 458.jpg" alt="Samara e Edílson 458.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 459.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 459.jpg" alt="Samara e Edílson 459.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 460.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 460.jpg" alt="Samara e Edílson 460.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 461.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 461.jpg" alt="Samara e Edílson 461.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 462.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 462.jpg" alt="Samara e Edílson 462.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 463.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 463.jpg" alt="Samara e Edílson 463.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 464.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 464.jpg" alt="Samara e Edílson 464.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 465.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 465.jpg" alt="Samara e Edílson 465.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 466.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 466.jpg" alt="Samara e Edílson 466.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 467.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 467.jpg" alt="Samara e Edílson 467.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 468.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 468.jpg" alt="Samara e Edílson 468.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 469.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 469.jpg" alt="Samara e Edílson 469.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 470.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 470.jpg" alt="Samara e Edílson 470.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 471.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 471.jpg" alt="Samara e Edílson 471.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 472.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 472.jpg" alt="Samara e Edílson 472.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 473.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 473.jpg" alt="Samara e Edílson 473.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 474.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 474.jpg" alt="Samara e Edílson 474.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 475.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 475.jpg" alt="Samara e Edílson 475.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 476.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 476.jpg" alt="Samara e Edílson 476.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 477.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 477.jpg" alt="Samara e Edílson 477.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 478.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 478.jpg" alt="Samara e Edílson 478.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 479.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 479.jpg" alt="Samara e Edílson 479.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 480.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 480.jpg" alt="Samara e Edílson 480.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 481.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 481.jpg" alt="Samara e Edílson 481.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 482.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 482.jpg" alt="Samara e Edílson 482.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 483.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 483.jpg" alt="Samara e Edílson 483.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 484.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 484.jpg" alt="Samara e Edílson 484.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 485.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 485.jpg" alt="Samara e Edílson 485.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 486.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 486.jpg" alt="Samara e Edílson 486.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 487.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 487.jpg" alt="Samara e Edílson 487.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 488.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 488.jpg" alt="Samara e Edílson 488.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 489.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 489.jpg" alt="Samara e Edílson 489.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 490.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 490.jpg" alt="Samara e Edílson 490.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 491.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 491.jpg" alt="Samara e Edílson 491.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 492.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 492.jpg" alt="Samara e Edílson 492.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 493.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 493.jpg" alt="Samara e Edílson 493.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 494.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 494.jpg" alt="Samara e Edílson 494.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 495.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 495.jpg" alt="Samara e Edílson 495.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 496.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 496.jpg" alt="Samara e Edílson 496.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 497.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 497.jpg" alt="Samara e Edílson 497.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 498.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 498.jpg" alt="Samara e Edílson 498.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 499.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 499.jpg" alt="Samara e Edílson 499.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 500.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 500.jpg" alt="Samara e Edílson 500.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 501.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 501.jpg" alt="Samara e Edílson 501.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 502.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 502.jpg" alt="Samara e Edílson 502.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 503.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 503.jpg" alt="Samara e Edílson 503.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 504.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 504.jpg" alt="Samara e Edílson 504.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 505.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 505.jpg" alt="Samara e Edílson 505.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 506.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 506.jpg" alt="Samara e Edílson 506.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 507.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 507.jpg" alt="Samara e Edílson 507.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 508.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 508.jpg" alt="Samara e Edílson 508.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 509.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 509.jpg" alt="Samara e Edílson 509.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 510.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 510.jpg" alt="Samara e Edílson 510.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 511.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 511.jpg" alt="Samara e Edílson 511.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 512.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 512.jpg" alt="Samara e Edílson 512.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 513.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 513.jpg" alt="Samara e Edílson 513.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 514.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 514.jpg" alt="Samara e Edílson 514.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 515.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 515.jpg" alt="Samara e Edílson 515.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 516.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 516.jpg" alt="Samara e Edílson 516.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 517.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 517.jpg" alt="Samara e Edílson 517.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 518.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 518.jpg" alt="Samara e Edílson 518.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 519.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 519.jpg" alt="Samara e Edílson 519.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 520.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 520.jpg" alt="Samara e Edílson 520.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 521.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 521.jpg" alt="Samara e Edílson 521.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 522.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 522.jpg" alt="Samara e Edílson 522.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 523.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 523.jpg" alt="Samara e Edílson 523.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 524.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 524.jpg" alt="Samara e Edílson 524.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 525.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 525.jpg" alt="Samara e Edílson 525.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 526.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 526.jpg" alt="Samara e Edílson 526.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 527.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 527.jpg" alt="Samara e Edílson 527.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 528.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 528.jpg" alt="Samara e Edílson 528.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 529.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 529.jpg" alt="Samara e Edílson 529.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 530.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 530.jpg" alt="Samara e Edílson 530.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 531.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 531.jpg" alt="Samara e Edílson 531.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 532.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 532.jpg" alt="Samara e Edílson 532.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 533.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 533.jpg" alt="Samara e Edílson 533.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 534.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 534.jpg" alt="Samara e Edílson 534.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 535.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 535.jpg" alt="Samara e Edílson 535.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 536.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 536.jpg" alt="Samara e Edílson 536.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 537.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 537.jpg" alt="Samara e Edílson 537.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 538.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 538.jpg" alt="Samara e Edílson 538.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 539.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 539.jpg" alt="Samara e Edílson 539.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 540.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 540.jpg" alt="Samara e Edílson 540.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 541.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 541.jpg" alt="Samara e Edílson 541.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 542.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 542.jpg" alt="Samara e Edílson 542.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 543.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 543.jpg" alt="Samara e Edílson 543.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 544.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 544.jpg" alt="Samara e Edílson 544.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 545.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 545.jpg" alt="Samara e Edílson 545.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 546.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 546.jpg" alt="Samara e Edílson 546.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 547.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 547.jpg" alt="Samara e Edílson 547.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 548.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 548.jpg" alt="Samara e Edílson 548.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 549.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 549.jpg" alt="Samara e Edílson 549.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 550.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 550.jpg" alt="Samara e Edílson 550.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 551.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 551.jpg" alt="Samara e Edílson 551.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 552.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 552.jpg" alt="Samara e Edílson 552.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 553.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 553.jpg" alt="Samara e Edílson 553.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 554.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 554.jpg" alt="Samara e Edílson 554.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 555.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 555.jpg" alt="Samara e Edílson 555.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 556.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 556.jpg" alt="Samara e Edílson 556.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 557.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 557.jpg" alt="Samara e Edílson 557.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 558.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 558.jpg" alt="Samara e Edílson 558.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 559.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 559.jpg" alt="Samara e Edílson 559.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 560.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 560.jpg" alt="Samara e Edílson 560.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 561.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 561.jpg" alt="Samara e Edílson 561.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 562.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 562.jpg" alt="Samara e Edílson 562.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 563.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 563.jpg" alt="Samara e Edílson 563.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 564.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 564.jpg" alt="Samara e Edílson 564.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 565.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 565.jpg" alt="Samara e Edílson 565.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 566.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 566.jpg" alt="Samara e Edílson 566.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 567.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 567.jpg" alt="Samara e Edílson 567.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 568.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 568.jpg" alt="Samara e Edílson 568.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 569.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 569.jpg" alt="Samara e Edílson 569.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 570.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 570.jpg" alt="Samara e Edílson 570.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 571.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 571.jpg" alt="Samara e Edílson 571.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 572.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 572.jpg" alt="Samara e Edílson 572.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 573.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 573.jpg" alt="Samara e Edílson 573.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 574.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 574.jpg" alt="Samara e Edílson 574.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 575.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 575.jpg" alt="Samara e Edílson 575.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 576.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 576.jpg" alt="Samara e Edílson 576.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 577.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 577.jpg" alt="Samara e Edílson 577.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 578.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 578.jpg" alt="Samara e Edílson 578.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 579.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 579.jpg" alt="Samara e Edílson 579.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 580.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 580.jpg" alt="Samara e Edílson 580.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 581.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 581.jpg" alt="Samara e Edílson 581.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 582.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 582.jpg" alt="Samara e Edílson 582.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 583.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 583.jpg" alt="Samara e Edílson 583.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 584.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 584.jpg" alt="Samara e Edílson 584.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 585.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 585.jpg" alt="Samara e Edílson 585.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 586.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 586.jpg" alt="Samara e Edílson 586.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 587.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 587.jpg" alt="Samara e Edílson 587.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 588.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 588.jpg" alt="Samara e Edílson 588.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 589.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 589.jpg" alt="Samara e Edílson 589.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 590.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 590.jpg" alt="Samara e Edílson 590.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 591.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 591.jpg" alt="Samara e Edílson 591.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 592.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 592.jpg" alt="Samara e Edílson 592.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 593.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 593.jpg" alt="Samara e Edílson 593.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 594.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 594.jpg" alt="Samara e Edílson 594.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 595.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 595.jpg" alt="Samara e Edílson 595.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 596.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 596.jpg" alt="Samara e Edílson 596.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 597.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 597.jpg" alt="Samara e Edílson 597.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 598.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 598.jpg" alt="Samara e Edílson 598.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 599.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 599.jpg" alt="Samara e Edílson 599.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 600.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 600.jpg" alt="Samara e Edílson 600.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 601.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 601.jpg" alt="Samara e Edílson 601.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 602.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 602.jpg" alt="Samara e Edílson 602.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 603.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 603.jpg" alt="Samara e Edílson 603.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 604.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 604.jpg" alt="Samara e Edílson 604.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 605.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 605.jpg" alt="Samara e Edílson 605.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 606.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 606.jpg" alt="Samara e Edílson 606.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 607.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 607.jpg" alt="Samara e Edílson 607.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 608.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 608.jpg" alt="Samara e Edílson 608.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 609.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 609.jpg" alt="Samara e Edílson 609.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 610.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 610.jpg" alt="Samara e Edílson 610.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 611.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 611.jpg" alt="Samara e Edílson 611.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 612.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 612.jpg" alt="Samara e Edílson 612.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 613.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 613.jpg" alt="Samara e Edílson 613.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 614.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 614.jpg" alt="Samara e Edílson 614.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 615.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 615.jpg" alt="Samara e Edílson 615.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 616.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 616.jpg" alt="Samara e Edílson 616.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 617.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 617.jpg" alt="Samara e Edílson 617.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 618.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 618.jpg" alt="Samara e Edílson 618.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 619.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 619.jpg" alt="Samara e Edílson 619.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 620.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 620.jpg" alt="Samara e Edílson 620.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 621.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 621.jpg" alt="Samara e Edílson 621.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 622.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 622.jpg" alt="Samara e Edílson 622.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 623.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 623.jpg" alt="Samara e Edílson 623.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 624.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 624.jpg" alt="Samara e Edílson 624.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 625.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 625.jpg" alt="Samara e Edílson 625.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 626.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 626.jpg" alt="Samara e Edílson 626.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 627.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 627.jpg" alt="Samara e Edílson 627.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 628.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 628.jpg" alt="Samara e Edílson 628.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 629.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 629.jpg" alt="Samara e Edílson 629.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 630.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 630.jpg" alt="Samara e Edílson 630.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 631.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 631.jpg" alt="Samara e Edílson 631.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 632.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 632.jpg" alt="Samara e Edílson 632.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 633.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 633.jpg" alt="Samara e Edílson 633.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 634.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 634.jpg" alt="Samara e Edílson 634.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 635.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 635.jpg" alt="Samara e Edílson 635.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 636.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 636.jpg" alt="Samara e Edílson 636.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 637.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 637.jpg" alt="Samara e Edílson 637.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 638.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 638.jpg" alt="Samara e Edílson 638.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 639.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 639.jpg" alt="Samara e Edílson 639.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 640.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 640.jpg" alt="Samara e Edílson 640.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 641.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 641.jpg" alt="Samara e Edílson 641.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 642.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 642.jpg" alt="Samara e Edílson 642.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 643.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 643.jpg" alt="Samara e Edílson 643.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 644.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 644.jpg" alt="Samara e Edílson 644.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 645.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 645.jpg" alt="Samara e Edílson 645.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 646.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 646.jpg" alt="Samara e Edílson 646.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 647.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 647.jpg" alt="Samara e Edílson 647.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 648.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 648.jpg" alt="Samara e Edílson 648.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 649.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 649.jpg" alt="Samara e Edílson 649.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 650.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 650.jpg" alt="Samara e Edílson 650.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 651.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 651.jpg" alt="Samara e Edílson 651.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 652.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 652.jpg" alt="Samara e Edílson 652.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 653.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 653.jpg" alt="Samara e Edílson 653.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 654.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 654.jpg" alt="Samara e Edílson 654.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 655.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 655.jpg" alt="Samara e Edílson 655.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 656.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 656.jpg" alt="Samara e Edílson 656.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 657.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 657.jpg" alt="Samara e Edílson 657.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 658.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 658.jpg" alt="Samara e Edílson 658.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 659.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 659.jpg" alt="Samara e Edílson 659.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 660.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 660.jpg" alt="Samara e Edílson 660.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 661.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 661.jpg" alt="Samara e Edílson 661.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 662.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 662.jpg" alt="Samara e Edílson 662.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 663.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 663.jpg" alt="Samara e Edílson 663.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 664.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 664.jpg" alt="Samara e Edílson 664.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 665.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 665.jpg" alt="Samara e Edílson 665.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 666.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 666.jpg" alt="Samara e Edílson 666.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 667.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 667.jpg" alt="Samara e Edílson 667.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 668.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 668.jpg" alt="Samara e Edílson 668.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 669.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 669.jpg" alt="Samara e Edílson 669.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 670.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 670.jpg" alt="Samara e Edílson 670.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 671.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 671.jpg" alt="Samara e Edílson 671.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 672.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 672.jpg" alt="Samara e Edílson 672.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 673.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 673.jpg" alt="Samara e Edílson 673.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 674.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 674.jpg" alt="Samara e Edílson 674.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 675.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 675.jpg" alt="Samara e Edílson 675.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 676.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 676.jpg" alt="Samara e Edílson 676.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 677.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 677.jpg" alt="Samara e Edílson 677.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 678.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 678.jpg" alt="Samara e Edílson 678.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 679.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 679.jpg" alt="Samara e Edílson 679.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 680.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 680.jpg" alt="Samara e Edílson 680.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 681.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 681.jpg" alt="Samara e Edílson 681.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 682.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 682.jpg" alt="Samara e Edílson 682.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 683.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 683.jpg" alt="Samara e Edílson 683.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 684.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 684.jpg" alt="Samara e Edílson 684.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 685.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 685.jpg" alt="Samara e Edílson 685.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 686.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 686.jpg" alt="Samara e Edílson 686.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 687.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 687.jpg" alt="Samara e Edílson 687.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 688.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 688.jpg" alt="Samara e Edílson 688.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 689.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 689.jpg" alt="Samara e Edílson 689.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 690.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 690.jpg" alt="Samara e Edílson 690.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 691.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 691.jpg" alt="Samara e Edílson 691.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 692.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 692.jpg" alt="Samara e Edílson 692.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 693.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 693.jpg" alt="Samara e Edílson 693.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 694.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 694.jpg" alt="Samara e Edílson 694.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 695.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 695.jpg" alt="Samara e Edílson 695.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 696.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 696.jpg" alt="Samara e Edílson 696.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 697.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 697.jpg" alt="Samara e Edílson 697.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 698.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 698.jpg" alt="Samara e Edílson 698.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 699.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 699.jpg" alt="Samara e Edílson 699.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 700.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 700.jpg" alt="Samara e Edílson 700.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 701.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 701.jpg" alt="Samara e Edílson 701.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 702.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 702.jpg" alt="Samara e Edílson 702.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 703.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 703.jpg" alt="Samara e Edílson 703.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 704.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 704.jpg" alt="Samara e Edílson 704.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 705.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 705.jpg" alt="Samara e Edílson 705.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 706.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 706.jpg" alt="Samara e Edílson 706.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 707.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 707.jpg" alt="Samara e Edílson 707.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 708.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 708.jpg" alt="Samara e Edílson 708.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 709.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 709.jpg" alt="Samara e Edílson 709.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 710.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 710.jpg" alt="Samara e Edílson 710.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 711.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 711.jpg" alt="Samara e Edílson 711.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 712.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 712.jpg" alt="Samara e Edílson 712.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 713.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 713.jpg" alt="Samara e Edílson 713.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 714.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 714.jpg" alt="Samara e Edílson 714.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 715.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 715.jpg" alt="Samara e Edílson 715.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 716.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 716.jpg" alt="Samara e Edílson 716.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 717.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 717.jpg" alt="Samara e Edílson 717.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 718.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 718.jpg" alt="Samara e Edílson 718.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 719.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 719.jpg" alt="Samara e Edílson 719.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 720.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 720.jpg" alt="Samara e Edílson 720.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 721.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 721.jpg" alt="Samara e Edílson 721.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 722.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 722.jpg" alt="Samara e Edílson 722.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 723.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 723.jpg" alt="Samara e Edílson 723.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 724.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 724.jpg" alt="Samara e Edílson 724.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 725.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 725.jpg" alt="Samara e Edílson 725.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 726.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 726.jpg" alt="Samara e Edílson 726.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 727.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 727.jpg" alt="Samara e Edílson 727.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 728.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 728.jpg" alt="Samara e Edílson 728.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 729.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 729.jpg" alt="Samara e Edílson 729.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 730.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 730.jpg" alt="Samara e Edílson 730.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 731.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 731.jpg" alt="Samara e Edílson 731.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 732.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 732.jpg" alt="Samara e Edílson 732.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 733.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 733.jpg" alt="Samara e Edílson 733.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 734.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 734.jpg" alt="Samara e Edílson 734.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 735.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 735.jpg" alt="Samara e Edílson 735.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 736.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 736.jpg" alt="Samara e Edílson 736.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 737.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 737.jpg" alt="Samara e Edílson 737.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 738.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 738.jpg" alt="Samara e Edílson 738.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 739.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 739.jpg" alt="Samara e Edílson 739.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 740.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 740.jpg" alt="Samara e Edílson 740.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 741.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 741.jpg" alt="Samara e Edílson 741.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 742.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 742.jpg" alt="Samara e Edílson 742.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 743.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 743.jpg" alt="Samara e Edílson 743.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 744.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 744.jpg" alt="Samara e Edílson 744.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 745.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 745.jpg" alt="Samara e Edílson 745.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 746.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 746.jpg" alt="Samara e Edílson 746.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 747.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 747.jpg" alt="Samara e Edílson 747.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 748.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 748.jpg" alt="Samara e Edílson 748.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 749.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 749.jpg" alt="Samara e Edílson 749.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 750.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 750.jpg" alt="Samara e Edílson 750.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 751.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 751.jpg" alt="Samara e Edílson 751.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 752.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 752.jpg" alt="Samara e Edílson 752.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 753.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 753.jpg" alt="Samara e Edílson 753.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 754.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 754.jpg" alt="Samara e Edílson 754.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 755.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 755.jpg" alt="Samara e Edílson 755.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 756.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 756.jpg" alt="Samara e Edílson 756.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 757.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 757.jpg" alt="Samara e Edílson 757.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 758.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 758.jpg" alt="Samara e Edílson 758.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 759.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 759.jpg" alt="Samara e Edílson 759.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 760.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 760.jpg" alt="Samara e Edílson 760.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 761.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 761.jpg" alt="Samara e Edílson 761.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 762.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 762.jpg" alt="Samara e Edílson 762.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 763.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 763.jpg" alt="Samara e Edílson 763.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 764.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 764.jpg" alt="Samara e Edílson 764.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 765.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 765.jpg" alt="Samara e Edílson 765.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 766.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 766.jpg" alt="Samara e Edílson 766.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 767.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 767.jpg" alt="Samara e Edílson 767.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 768.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 768.jpg" alt="Samara e Edílson 768.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 769.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 769.jpg" alt="Samara e Edílson 769.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 770.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 770.jpg" alt="Samara e Edílson 770.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 771.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 771.jpg" alt="Samara e Edílson 771.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 772.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 772.jpg" alt="Samara e Edílson 772.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 773.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 773.jpg" alt="Samara e Edílson 773.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 774.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 774.jpg" alt="Samara e Edílson 774.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 775.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 775.jpg" alt="Samara e Edílson 775.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 776.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 776.jpg" alt="Samara e Edílson 776.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 777.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 777.jpg" alt="Samara e Edílson 777.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 778.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 778.jpg" alt="Samara e Edílson 778.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 779.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 779.jpg" alt="Samara e Edílson 779.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 780.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 780.jpg" alt="Samara e Edílson 780.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 781.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 781.jpg" alt="Samara e Edílson 781.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 782.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 782.jpg" alt="Samara e Edílson 782.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 783.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 783.jpg" alt="Samara e Edílson 783.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 784.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 784.jpg" alt="Samara e Edílson 784.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 785.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 785.jpg" alt="Samara e Edílson 785.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 786.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 786.jpg" alt="Samara e Edílson 786.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 787.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 787.jpg" alt="Samara e Edílson 787.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 788.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 788.jpg" alt="Samara e Edílson 788.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 789.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 789.jpg" alt="Samara e Edílson 789.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 790.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 790.jpg" alt="Samara e Edílson 790.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 791.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 791.jpg" alt="Samara e Edílson 791.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 792.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 792.jpg" alt="Samara e Edílson 792.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 793.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 793.jpg" alt="Samara e Edílson 793.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 794.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 794.jpg" alt="Samara e Edílson 794.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 795.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 795.jpg" alt="Samara e Edílson 795.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 796.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 796.jpg" alt="Samara e Edílson 796.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 797.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 797.jpg" alt="Samara e Edílson 797.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 798.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 798.jpg" alt="Samara e Edílson 798.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 799.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 799.jpg" alt="Samara e Edílson 799.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 800.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 800.jpg" alt="Samara e Edílson 800.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 801.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 801.jpg" alt="Samara e Edílson 801.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 802.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 802.jpg" alt="Samara e Edílson 802.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 803.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 803.jpg" alt="Samara e Edílson 803.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 804.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 804.jpg" alt="Samara e Edílson 804.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 805.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 805.jpg" alt="Samara e Edílson 805.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 806.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 806.jpg" alt="Samara e Edílson 806.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 807.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 807.jpg" alt="Samara e Edílson 807.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 808.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 808.jpg" alt="Samara e Edílson 808.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 809.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 809.jpg" alt="Samara e Edílson 809.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 810.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 810.jpg" alt="Samara e Edílson 810.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 811.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 811.jpg" alt="Samara e Edílson 811.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 812.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 812.jpg" alt="Samara e Edílson 812.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 813.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 813.jpg" alt="Samara e Edílson 813.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 814.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 814.jpg" alt="Samara e Edílson 814.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 815.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 815.jpg" alt="Samara e Edílson 815.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 816.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 816.jpg" alt="Samara e Edílson 816.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 817.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 817.jpg" alt="Samara e Edílson 817.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 818.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 818.jpg" alt="Samara e Edílson 818.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 819.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 819.jpg" alt="Samara e Edílson 819.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 820.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 820.jpg" alt="Samara e Edílson 820.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 821.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 821.jpg" alt="Samara e Edílson 821.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 822.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 822.jpg" alt="Samara e Edílson 822.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 823.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 823.jpg" alt="Samara e Edílson 823.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 824.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 824.jpg" alt="Samara e Edílson 824.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 825.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 825.jpg" alt="Samara e Edílson 825.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 826.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 826.jpg" alt="Samara e Edílson 826.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 827.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 827.jpg" alt="Samara e Edílson 827.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 828.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 828.jpg" alt="Samara e Edílson 828.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 829.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 829.jpg" alt="Samara e Edílson 829.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 830.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 830.jpg" alt="Samara e Edílson 830.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 831.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 831.jpg" alt="Samara e Edílson 831.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 832.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 832.jpg" alt="Samara e Edílson 832.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 833.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 833.jpg" alt="Samara e Edílson 833.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 834.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 834.jpg" alt="Samara e Edílson 834.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 835.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 835.jpg" alt="Samara e Edílson 835.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 836.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 836.jpg" alt="Samara e Edílson 836.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 837.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 837.jpg" alt="Samara e Edílson 837.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 838.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 838.jpg" alt="Samara e Edílson 838.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 839.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 839.jpg" alt="Samara e Edílson 839.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 840.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 840.jpg" alt="Samara e Edílson 840.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 841.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 841.jpg" alt="Samara e Edílson 841.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 842.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 842.jpg" alt="Samara e Edílson 842.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 843.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 843.jpg" alt="Samara e Edílson 843.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 844.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 844.jpg" alt="Samara e Edílson 844.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 845.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 845.jpg" alt="Samara e Edílson 845.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 846.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 846.jpg" alt="Samara e Edílson 846.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 847.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 847.jpg" alt="Samara e Edílson 847.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 848.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 848.jpg" alt="Samara e Edílson 848.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 849.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 849.jpg" alt="Samara e Edílson 849.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 850.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 850.jpg" alt="Samara e Edílson 850.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 851.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 851.jpg" alt="Samara e Edílson 851.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 852.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 852.jpg" alt="Samara e Edílson 852.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 853.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 853.jpg" alt="Samara e Edílson 853.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 854.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 854.jpg" alt="Samara e Edílson 854.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 855.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 855.jpg" alt="Samara e Edílson 855.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 856.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 856.jpg" alt="Samara e Edílson 856.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 857.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 857.jpg" alt="Samara e Edílson 857.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 858.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 858.jpg" alt="Samara e Edílson 858.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 859.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 859.jpg" alt="Samara e Edílson 859.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 860.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 860.jpg" alt="Samara e Edílson 860.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 861.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 861.jpg" alt="Samara e Edílson 861.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 862.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 862.jpg" alt="Samara e Edílson 862.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 863.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 863.jpg" alt="Samara e Edílson 863.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 864.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 864.jpg" alt="Samara e Edílson 864.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 865.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 865.jpg" alt="Samara e Edílson 865.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 866.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 866.jpg" alt="Samara e Edílson 866.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 867.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 867.jpg" alt="Samara e Edílson 867.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 868.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 868.jpg" alt="Samara e Edílson 868.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 869.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 869.jpg" alt="Samara e Edílson 869.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 870.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 870.jpg" alt="Samara e Edílson 870.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 871.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 871.jpg" alt="Samara e Edílson 871.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 872.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 872.jpg" alt="Samara e Edílson 872.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 873.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 873.jpg" alt="Samara e Edílson 873.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 874.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 874.jpg" alt="Samara e Edílson 874.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 875.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 875.jpg" alt="Samara e Edílson 875.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 876.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 876.jpg" alt="Samara e Edílson 876.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 877.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 877.jpg" alt="Samara e Edílson 877.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 878.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 878.jpg" alt="Samara e Edílson 878.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 879.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 879.jpg" alt="Samara e Edílson 879.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 880.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 880.jpg" alt="Samara e Edílson 880.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 881.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 881.jpg" alt="Samara e Edílson 881.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 882.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 882.jpg" alt="Samara e Edílson 882.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 883.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 883.jpg" alt="Samara e Edílson 883.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 884.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 884.jpg" alt="Samara e Edílson 884.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 885.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 885.jpg" alt="Samara e Edílson 885.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 886.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 886.jpg" alt="Samara e Edílson 886.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 887.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 887.jpg" alt="Samara e Edílson 887.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 888.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 888.jpg" alt="Samara e Edílson 888.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 889.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 889.jpg" alt="Samara e Edílson 889.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 890.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 890.jpg" alt="Samara e Edílson 890.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 891.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 891.jpg" alt="Samara e Edílson 891.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 892.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 892.jpg" alt="Samara e Edílson 892.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 893.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 893.jpg" alt="Samara e Edílson 893.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 894.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 894.jpg" alt="Samara e Edílson 894.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 895.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 895.jpg" alt="Samara e Edílson 895.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 896.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 896.jpg" alt="Samara e Edílson 896.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 897.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 897.jpg" alt="Samara e Edílson 897.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 898.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 898.jpg" alt="Samara e Edílson 898.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 899.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 899.jpg" alt="Samara e Edílson 899.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 900.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 900.jpg" alt="Samara e Edílson 900.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 901.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 901.jpg" alt="Samara e Edílson 901.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 902.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 902.jpg" alt="Samara e Edílson 902.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 903.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 903.jpg" alt="Samara e Edílson 903.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 904.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 904.jpg" alt="Samara e Edílson 904.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 905.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 905.jpg" alt="Samara e Edílson 905.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 906.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 906.jpg" alt="Samara e Edílson 906.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 907.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 907.jpg" alt="Samara e Edílson 907.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 908.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 908.jpg" alt="Samara e Edílson 908.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 909.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 909.jpg" alt="Samara e Edílson 909.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 910.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 910.jpg" alt="Samara e Edílson 910.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 911.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 911.jpg" alt="Samara e Edílson 911.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 912.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 912.jpg" alt="Samara e Edílson 912.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 913.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 913.jpg" alt="Samara e Edílson 913.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 914.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 914.jpg" alt="Samara e Edílson 914.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 915.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 915.jpg" alt="Samara e Edílson 915.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 916.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 916.jpg" alt="Samara e Edílson 916.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 917.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 917.jpg" alt="Samara e Edílson 917.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 918.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 918.jpg" alt="Samara e Edílson 918.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 919.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 919.jpg" alt="Samara e Edílson 919.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 920.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 920.jpg" alt="Samara e Edílson 920.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 921.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 921.jpg" alt="Samara e Edílson 921.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 922.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 922.jpg" alt="Samara e Edílson 922.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 923.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 923.jpg" alt="Samara e Edílson 923.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 924.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 924.jpg" alt="Samara e Edílson 924.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 925.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 925.jpg" alt="Samara e Edílson 925.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 926.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 926.jpg" alt="Samara e Edílson 926.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 927.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 927.jpg" alt="Samara e Edílson 927.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 928.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 928.jpg" alt="Samara e Edílson 928.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 929.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 929.jpg" alt="Samara e Edílson 929.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 930.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 930.jpg" alt="Samara e Edílson 930.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 931.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 931.jpg" alt="Samara e Edílson 931.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 932.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 932.jpg" alt="Samara e Edílson 932.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 933.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 933.jpg" alt="Samara e Edílson 933.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 934.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 934.jpg" alt="Samara e Edílson 934.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 935.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 935.jpg" alt="Samara e Edílson 935.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 936.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 936.jpg" alt="Samara e Edílson 936.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 937.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 937.jpg" alt="Samara e Edílson 937.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 938.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 938.jpg" alt="Samara e Edílson 938.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 939.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 939.jpg" alt="Samara e Edílson 939.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 940.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 940.jpg" alt="Samara e Edílson 940.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 941.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 941.jpg" alt="Samara e Edílson 941.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 942.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 942.jpg" alt="Samara e Edílson 942.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 943.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 943.jpg" alt="Samara e Edílson 943.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 944.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 944.jpg" alt="Samara e Edílson 944.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 945.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 945.jpg" alt="Samara e Edílson 945.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 946.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 946.jpg" alt="Samara e Edílson 946.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 947.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 947.jpg" alt="Samara e Edílson 947.jpg" class="lazyload">
+    </a>
+
+    <a href="images/Samara e Edílson 948.jpg" class="gallery-item">
+        <img data-src="images/Samara e Edílson 948.jpg" alt="Samara e Edílson 948.jpg" class="lazyload">
+    </a>
+
 </div>
 
 <footer>
-    <p>Com amor, Samara e Edilson - 17/03/2024</p>
+    <p>Com amor, Samara e Edilson - 2023</p>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"></script>
